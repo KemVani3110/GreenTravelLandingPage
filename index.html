@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Green Travel - Eco-Friendly Adventures</title>
     <link rel="icon" href="./public/favicon.svg" type="image/svg+xml" />
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN -->
@@ -139,37 +139,181 @@
     </header>
 
     <!-- Hero section -->
-    <section id="home" class="hero-bg text-white py-24 md:py-32 relative">
-      <div
-        class="max-w-6xl mx-auto px-4 text-center"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        <h2
-          class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
-        >
-          Explore Nature, <span class="text-green-300">Protect</span> the
-          Environment
-        </h2>
-        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-100">
-          Join us on safe, meaningful, and eco-friendly journeys that respect
-          and preserve our planet.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-          <a
-            href="#contact"
-            class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
-          >
-            <i class="fas fa-paper-plane mr-2"></i>Book Your Trip
-          </a>
-          <a
-            href="#features"
-            class="bg-transparent border-2 border-white hover:bg-white hover:text-green-700 text-white px-8 py-4 rounded-full font-semibold transition duration-300 inline-flex items-center justify-center"
-          >
-            <i class="fas fa-info-circle mr-2"></i>Learn More
-          </a>
+    <section
+      id="home"
+      class="hero-bg text-white py-24 md:py-32 relative overflow-hidden"
+    >
+      <!-- Animated Background -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="floating-leaf" style="top: 15%; left: 10%">
+          <i class="fas fa-leaf text-green-200 text-xl opacity-70"></i>
+        </div>
+        <div class="floating-leaf delay-1" style="top: 25%; left: 80%">
+          <i class="fas fa-leaf text-green-200 text-lg opacity-50"></i>
+        </div>
+        <div class="floating-leaf delay-2" style="top: 60%; left: 15%">
+          <i class="fas fa-leaf text-green-100 text-2xl opacity-60"></i>
+        </div>
+        <div class="floating-leaf delay-3" style="top: 40%; left: 90%">
+          <i class="fas fa-leaf text-green-200 text-lg opacity-50"></i>
+        </div>
+        <div class="floating-leaf delay-4" style="top: 75%; left: 30%">
+          <i class="fas fa-leaf text-green-100 text-xl opacity-70"></i>
+        </div>
+        <div class="floating-leaf delay-5" style="top: 85%; left: 80%">
+          <i class="fas fa-leaf text-green-300 text-lg opacity-60"></i>
         </div>
       </div>
+
+      <div class="max-w-6xl mx-auto px-4 relative z-10">
+        <!-- Hero Content -->
+        <div class="flex flex-col lg:flex-row items-center">
+          <!-- Left Column - Text Content -->
+          <div
+            class="lg:w-1/2 text-left mb-12 lg:mb-0"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h2
+              class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight hero-title"
+            >
+              Explore <span class="text-green-300">Nature</span
+              ><br />
+              <span class="hero-subtitle">Preserve Our Planet</span>
+            </h2>
+            <p class="text-xl md:text-2xl mb-8 text-gray-100 max-w-lg">
+              Join us on safe, meaningful, and eco-friendly journeys that
+              respect and preserve our beautiful world for generations to come.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#contact"
+                class="hero-cta-button bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
+              >
+                <i class="fas fa-paper-plane mr-2"></i>Book Your Trip
+              </a>
+              <a
+                href="#features"
+                class="bg-transparent border-2 border-white hover:bg-white hover:text-green-700 text-white px-8 py-4 rounded-full font-semibold transition duration-300 inline-flex items-center justify-center"
+              >
+                <i class="fas fa-info-circle mr-2"></i>Learn More
+              </a>
+            </div>
+
+            <!-- Destination Tags -->
+            <div class="mt-8 destination-tags">
+              <span
+                class="cursor-pointer inline-block bg-green-800 bg-opacity-50 text-green-100 text-sm px-3 py-1 rounded-full m-1 animate-tag-1"
+              >
+                <i class="fas fa-map-marker-alt mr-1"></i>Costa Rica
+              </span>
+              <span
+                class="cursor-pointer inline-block bg-green-800 bg-opacity-50 text-green-100 text-sm px-3 py-1 rounded-full m-1 animate-tag-2"
+              >
+                <i class="fas fa-map-marker-alt mr-1"></i>Norway
+              </span>
+              <span
+                class="cursor-pointer inline-block bg-green-800 bg-opacity-50 text-green-100 text-sm px-3 py-1 rounded-full m-1 animate-tag-3"
+              >
+                <i class="fas fa-map-marker-alt mr-1"></i>New Zealand
+              </span>
+              <span
+                class="cursor-pointer inline-block bg-green-800 bg-opacity-50 text-green-100 text-sm px-3 py-1 rounded-full m-1 animate-tag-4"
+              >
+                <i class="fas fa-map-marker-alt mr-1"></i>Iceland
+              </span>
+            </div>
+          </div>
+
+          <!-- Right Column - Earth/Globe Interactive Element -->
+          <div
+            class="lg:w-1/2 flex justify-center"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div class="earth-container relative">
+              <!-- Rotating Earth -->
+              <div class="earth-globe">
+                <div
+                  class="earth-indicator pulse-dot"
+                  style="top: 30%; left: 35%"
+                  title="Costa Rica"
+                >
+                  <div class="pulse-ring"></div>
+                </div>
+                <div
+                  class="earth-indicator pulse-dot"
+                  style="top: 22%; left: 52%"
+                  title="Norway"
+                >
+                  <div class="pulse-ring"></div>
+                </div>
+                <div
+                  class="earth-indicator pulse-dot"
+                  style="top: 60%; left: 65%"
+                  title="New Zealand"
+                >
+                  <div class="pulse-ring"></div>
+                </div>
+                <div
+                  class="earth-indicator pulse-dot"
+                  style="top: 20%; left: 46%"
+                  title="Iceland"
+                >
+                  <div class="pulse-ring"></div>
+                </div>
+              </div>
+
+              <!-- Stats Counter Cards -->
+              <div
+                class="earth-stat-card absolute top-0 right-0 bg-white bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg animate-card-1"
+              >
+                <div class="flex items-center">
+                  <i class="fas fa-tree text-green-300 mr-2"></i>
+                  <div>
+                    <div
+                      class="text-xl font-bold text-white counter-animation"
+                      data-count="5000"
+                    >
+                      0
+                    </div>
+                    <div class="text-xs text-green-100">Trees Planted</div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="earth-stat-card absolute bottom-10 left-0 bg-white bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg animate-card-2"
+              >
+                <div class="flex items-center">
+                  <i class="fas fa-users text-green-300 mr-2"></i>
+                  <div>
+                    <div
+                      class="text-xl font-bold text-white counter-animation"
+                      data-count="10000"
+                    >
+                      0
+                    </div>
+                    <div class="text-xs text-green-100">Happy Travelers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div
+          class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center"
+        >
+          <div class="scroll-down-arrow">
+            <span class="block text-sm mb-2">Explore More</span>
+            <i class="fas fa-chevron-down animate-bounce"></i>
+          </div>
+        </div>
+      </div>
+
       <div class="custom-shape-divider bottom">
         <svg
           data-name="Layer 1"
@@ -186,142 +330,616 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-16 bg-green-50">
+    <section
+      class="py-20 bg-gradient-to-b from-green-50 to-green-100 relative overflow-hidden"
+    >
+      <!-- Background decoration elements -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-10 left-10 opacity-10">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <path
+              d="M20,50 Q50,0 80,50 T140,50 T200,50"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+            <path
+              d="M0,100 Q30,50 60,100 T120,100 T180,100"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+            <path
+              d="M20,150 Q50,100 80,150 T140,150 T200,150"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+          </svg>
+        </div>
+        <div class="absolute bottom-10 right-10 opacity-10">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <path
+              d="M20,50 Q50,0 80,50 T140,50 T200,50"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+            <path
+              d="M0,100 Q30,50 60,100 T120,100 T180,100"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+            <path
+              d="M20,150 Q50,100 80,150 T140,150 T200,150"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+          </svg>
+        </div>
+      </div>
+
       <div class="max-w-6xl mx-auto px-4">
+        <!-- Section heading -->
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">
+            Our Impact
+          </h2>
+          <div class="w-24 h-1 bg-green-500 mx-auto mb-6 rounded-full"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Explore the positive impact we're making together through
+            sustainable travel and environmental conservation efforts.
+          </p>
+        </div>
+
+        <!-- Stats Cards -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div
-            class="bg-white rounded-xl p-8 shadow-md text-center"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="text-green-500 text-4xl font-bold mb-2">10K+</div>
-            <p class="text-gray-600">Travelers Joined</p>
+          <!-- Travelers Card -->
+          <div class="relative group" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-2 border-b-4 border-green-500"
+            >
+              <div
+                class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-green-500 rounded-full w-16 h-16 flex items-center justify-center text-white shadow-lg"
+              >
+                <i class="fas fa-users text-2xl"></i>
+              </div>
+              <div class="text-center pt-6">
+                <div
+                  class="text-green-600 text-5xl font-bold mb-3 mt-4 counter-animation"
+                  data-count="10000"
+                >
+                  10K+
+                </div>
+                <p class="text-gray-700 font-medium text-lg">
+                  Travelers Joined
+                </p>
+                <p class="text-gray-500 text-sm mt-2">
+                  Environmentally conscious travelers choosing sustainable
+                  adventures
+                </p>
+              </div>
+            </div>
           </div>
-          <div
-            class="bg-white rounded-xl p-8 shadow-md text-center"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="text-green-500 text-4xl font-bold mb-2">50+</div>
-            <p class="text-gray-600">Eco Destinations</p>
+
+          <!-- Destinations Card -->
+          <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-2 border-b-4 border-green-500"
+            >
+              <div
+                class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-green-500 rounded-full w-16 h-16 flex items-center justify-center text-white shadow-lg"
+              >
+                <i class="fas fa-map-marked-alt text-2xl"></i>
+              </div>
+              <div class="text-center pt-6">
+                <div
+                  class="text-green-600 text-5xl font-bold mb-3 mt-4 counter-animation"
+                  data-count="50"
+                >
+                  50+
+                </div>
+                <p class="text-gray-700 font-medium text-lg">
+                  Eco Destinations
+                </p>
+                <p class="text-gray-500 text-sm mt-2">
+                  Beautiful locations committed to sustainable tourism practices
+                </p>
+              </div>
+            </div>
           </div>
-          <div
-            class="bg-white rounded-xl p-8 shadow-md text-center"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="text-green-500 text-4xl font-bold mb-2">100%</div>
-            <p class="text-gray-600">Carbon Offset</p>
+
+          <!-- Carbon Offset Card -->
+          <div class="relative group" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-2 border-b-4 border-green-500"
+            >
+              <div
+                class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-green-500 rounded-full w-16 h-16 flex items-center justify-center text-white shadow-lg"
+              >
+                <i class="fas fa-leaf text-2xl"></i>
+              </div>
+              <div class="text-center pt-6">
+                <div class="text-green-600 text-5xl font-bold mb-3 mt-4">
+                  100%
+                </div>
+                <p class="text-gray-700 font-medium text-lg">Carbon Offset</p>
+                <p class="text-gray-500 text-sm mt-2">
+                  Every trip is fully carbon neutral through our offset program
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Metrics Row -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <!-- Trees Planted -->
+          <div class="bg-green-100 rounded-xl p-4 text-center">
+            <div class="flex items-center justify-center mb-2">
+              <i class="fas fa-tree text-green-600 mr-2"></i>
+              <div
+                class="text-green-800 text-2xl font-bold counter-animation"
+                data-count="5000"
+              >
+                5K+
+              </div>
+            </div>
+            <p class="text-green-700 text-sm">Trees Planted</p>
+          </div>
+
+          <!-- Local Communities -->
+          <div class="bg-green-100 rounded-xl p-4 text-center">
+            <div class="flex items-center justify-center mb-2">
+              <i class="fas fa-home text-green-600 mr-2"></i>
+              <div
+                class="text-green-800 text-2xl font-bold counter-animation"
+                data-count="120"
+              >
+                120+
+              </div>
+            </div>
+            <p class="text-green-700 text-sm">Local Communities</p>
+          </div>
+
+          <!-- Wildlife Protected -->
+          <div class="bg-green-100 rounded-xl p-4 text-center">
+            <div class="flex items-center justify-center mb-2">
+              <i class="fas fa-paw text-green-600 mr-2"></i>
+              <div
+                class="text-green-800 text-2xl font-bold counter-animation"
+                data-count="90"
+              >
+                90+
+              </div>
+            </div>
+            <p class="text-green-700 text-sm">Wildlife Species</p>
+          </div>
+
+          <!-- Plastic Reduced -->
+          <div class="bg-green-100 rounded-xl p-4 text-center">
+            <div class="flex items-center justify-center mb-2">
+              <i class="fas fa-recycle text-green-600 mr-2"></i>
+              <div
+                class="text-green-800 text-2xl font-bold counter-animation"
+                data-count="8000"
+              >
+                8K
+              </div>
+            </div>
+            <p class="text-green-700 text-sm">Kg Plastic Reduced</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Features -->
-    <section id="features" class="py-20 px-4 bg-white relative">
+    <section
+      id="features"
+      class="py-20 px-4 bg-gradient-to-b from-white to-green-50 relative overflow-hidden"
+    >
+      <!-- Background -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-10 left-10 opacity-10">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <path
+              d="M20,50 Q50,0 80,50 T140,50 T200,50"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+            <path
+              d="M0,100 Q30,50 60,100 T120,100 T180,100"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+            <path
+              d="M20,150 Q50,100 80,150 T140,150 T200,150"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+          </svg>
+        </div>
+        <div class="absolute bottom-10 right-10 opacity-10">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <path
+              d="M20,50 Q50,0 80,50 T140,50 T200,50"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+            <path
+              d="M0,100 Q30,50 60,100 T120,100 T180,100"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+            <path
+              d="M20,150 Q50,100 80,150 T140,150 T200,150"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+          </svg>
+        </div>
+        <!-- Animated leaf -->
+        <div class="floating-leaf" style="top: 15%; left: 5%">
+          <i class="fas fa-leaf text-green-200 text-xl opacity-30"></i>
+        </div>
+        <div class="floating-leaf delay-1" style="top: 35%; left: 85%">
+          <i class="fas fa-leaf text-green-200 text-lg opacity-20"></i>
+        </div>
+        <div class="floating-leaf delay-2" style="top: 70%; left: 10%">
+          <i class="fas fa-leaf text-green-200 text-2xl opacity-20"></i>
+        </div>
+        <div class="floating-leaf delay-3" style="top: 50%; left: 95%">
+          <i class="fas fa-leaf text-green-200 text-lg opacity-20"></i>
+        </div>
+      </div>
+
       <div class="max-w-6xl mx-auto">
+        <!-- Section heading -->
         <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">
             Our Eco-Friendly Approach
           </h2>
+          <div class="w-24 h-1 bg-green-500 mx-auto mb-6 rounded-full"></div>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
             We're committed to sustainable travel that protects our planet while
             creating unforgettable experiences.
           </p>
         </div>
 
+        <!-- Main Features -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
           <div
-            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            class="bg-white p-8 rounded-2xl shadow-lg group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-b-4 border-green-500"
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div class="p-4 mb-6">
-              <i class="fas fa-tree text-green-600 text-5xl"></i>
+            <div
+              class="mb-6 text-center p-4 bg-green-50 rounded-full w-20 h-20 flex items-center justify-center mx-auto"
+            >
+              <i class="fas fa-tree text-green-600 text-3xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Forest Conservation</h3>
-            <p class="text-gray-600">
+            <h3 class="text-xl font-semibold mb-3 text-center text-green-800">
+              Forest Conservation
+            </h3>
+            <p class="text-gray-600 text-center">
               Our tours actively support forest preservation programs and
               eliminate single-use plastic waste.
             </p>
+            <div class="mt-6 text-center">
+              <div class="text-green-600 text-lg font-bold">
+                <i class="fas fa-seedling mr-2"></i>5K+
+              </div>
+              <p class="text-sm text-gray-500">Trees Planted</p>
+            </div>
           </div>
 
+          <!-- Feature 2 -->
           <div
-            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            class="bg-white p-8 rounded-2xl shadow-lg group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-b-4 border-green-500"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <div class="p-4 mb-6">
-              <i class="fas fa-recycle text-green-600 text-5xl"></i>
+            <div
+              class="mb-6 text-center p-4 bg-green-50 rounded-full w-20 h-20 flex items-center justify-center mx-auto"
+            >
+              <i class="fas fa-recycle text-green-600 text-3xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Sustainable Practices</h3>
-            <p class="text-gray-600">
+            <h3 class="text-xl font-semibold mb-3 text-center text-green-800">
+              Sustainable Practices
+            </h3>
+            <p class="text-gray-600 text-center">
               We encourage travelers to use environmentally friendly products
               and follow leave-no-trace principles.
             </p>
+            <div class="mt-6 text-center">
+              <div class="text-green-600 text-lg font-bold">
+                <i class="fas fa-recycle mr-2"></i>8K
+              </div>
+              <p class="text-sm text-gray-500">Kg Plastic Reduced</p>
+            </div>
           </div>
 
+          <!-- Feature 3 -->
           <div
-            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            class="bg-white p-8 rounded-2xl shadow-lg group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-b-4 border-green-500"
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <div class="p-4 mb-6">
-              <i class="fas fa-bicycle text-green-600 text-5xl"></i>
+            <div
+              class="mb-6 text-center p-4 bg-green-50 rounded-full w-20 h-20 flex items-center justify-center mx-auto"
+            >
+              <i class="fas fa-bicycle text-green-600 text-3xl"></i>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Green Transportation</h3>
-            <p class="text-gray-600">
+            <h3 class="text-xl font-semibold mb-3 text-center text-green-800">
+              Green Transportation
+            </h3>
+            <p class="text-gray-600 text-center">
               We prioritize non-polluting transportation options including
               bicycles, electric vehicles, and walking tours.
             </p>
+            <div class="mt-6 text-center">
+              <div class="text-green-600 text-lg font-bold">
+                <i class="fas fa-leaf mr-2"></i>100%
+              </div>
+              <p class="text-sm text-gray-500">Carbon Offset</p>
+            </div>
           </div>
+        </div>
 
+        <!-- Secondary Features -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature 4 -->
           <div
-            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            class="relative bg-green-600 text-white p-8 rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div class="p-4 mb-6">
-              <i class="fas fa-users text-green-600 text-5xl"></i>
+            <!-- Background pattern -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+              <svg
+                width="100%"
+                height="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <pattern
+                  id="pattern-circles"
+                  x="0"
+                  y="0"
+                  width="40"
+                  height="40"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="20" cy="20" r="3" fill="white" />
+                </pattern>
+                <rect
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  fill="url(#pattern-circles)"
+                />
+              </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Community Support</h3>
-            <p class="text-gray-600">
+
+            <div class="flex items-center mb-6">
+              <div
+                class="p-4 bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-users text-white text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Community Support</h3>
+                <div
+                  class="w-12 h-1 bg-white bg-opacity-40 mt-2 rounded-full"
+                ></div>
+              </div>
+            </div>
+            <p class="text-white text-opacity-90 mb-6">
               We partner with local communities to ensure tourism benefits
               residents through fair wages and cultural preservation projects.
             </p>
+            <div class="flex items-center">
+              <div
+                class="text-3xl font-bold mr-2 counter-animation"
+                data-count="120"
+              >
+                120+
+              </div>
+              <div class="text-sm opacity-80">Local Communities Supported</div>
+            </div>
           </div>
 
+          <!-- Feature 5 -->
           <div
-            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            class="relative bg-green-600 text-white p-8 rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <div class="p-4 mb-6">
-              <i class="fas fa-utensils text-green-600 text-5xl"></i>
+            <!-- Background pattern -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+              <svg
+                width="100%"
+                height="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <pattern
+                  id="pattern-circles-2"
+                  x="0"
+                  y="0"
+                  width="40"
+                  height="40"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="20" cy="20" r="3" fill="white" />
+                </pattern>
+                <rect
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  fill="url(#pattern-circles-2)"
+                />
+              </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Sustainable Dining</h3>
-            <p class="text-gray-600">
+
+            <div class="flex items-center mb-6">
+              <div
+                class="p-4 bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-utensils text-white text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Sustainable Dining</h3>
+                <div
+                  class="w-12 h-1 bg-white bg-opacity-40 mt-2 rounded-full"
+                ></div>
+              </div>
+            </div>
+            <p class="text-white text-opacity-90 mb-6">
               We serve locally-sourced, organic foods that reduce food miles and
               support sustainable agriculture in every destination.
             </p>
+            <div class="flex items-center">
+              <div class="text-3xl font-bold mr-2">100%</div>
+              <div class="text-sm opacity-80">Locally Sourced Ingredients</div>
+            </div>
           </div>
 
+          <!-- Feature 6 -->
           <div
-            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            class="relative bg-green-600 text-white p-8 rounded-2xl shadow-lg overflow-hidden group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <div class="p-4 mb-6">
-              <i class="fas fa-hand-holding-heart text-green-600 text-5xl"></i>
+            <!-- Background pattern -->
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+              <svg
+                width="100%"
+                height="100%"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <pattern
+                  id="pattern-circles-3"
+                  x="0"
+                  y="0"
+                  width="40"
+                  height="40"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="20" cy="20" r="3" fill="white" />
+                </pattern>
+                <rect
+                  x="0"
+                  y="0"
+                  width="100%"
+                  height="100%"
+                  fill="url(#pattern-circles-3)"
+                />
+              </svg>
             </div>
-            <h3 class="text-xl font-semibold mb-3">Wildlife Protection</h3>
-            <p class="text-gray-600">
+
+            <div class="flex items-center mb-6">
+              <div
+                class="p-4 bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-hand-holding-heart text-white text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold">Wildlife Protection</h3>
+                <div
+                  class="w-12 h-1 bg-white bg-opacity-40 mt-2 rounded-full"
+                ></div>
+              </div>
+            </div>
+            <p class="text-white text-opacity-90 mb-6">
               Our tours support animal conservation efforts and never include
               activities that exploit or harm wildlife in their natural
               habitats.
             </p>
+            <div class="flex items-center">
+              <div
+                class="text-3xl font-bold mr-2 counter-animation"
+                data-count="90"
+              >
+                90+
+              </div>
+              <div class="text-sm opacity-80">Wildlife Species Protected</div>
+            </div>
           </div>
         </div>
+
+        <!-- CTA Banner -->
+        <div
+          class="mt-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 text-white text-center shadow-lg overflow-hidden relative"
+          data-aos="fade-up"
+        >
+          <!-- Background decoration -->
+          <div
+            class="absolute inset-0 overflow-hidden opacity-20 pointer-events-none"
+          >
+            <svg
+              viewBox="0 0 200 200"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute -right-20 -bottom-20 w-80 h-80"
+            >
+              <path
+                fill="white"
+                d="M49.2,-56.1C62.6,-45.6,71.9,-28.8,74.1,-11.2C76.4,6.5,71.5,25,61.1,39.1C50.6,53.3,34.5,63.1,15.8,69.5C-2.9,75.9,-24.1,78.9,-42.1,71.6C-60.1,64.3,-74.8,46.7,-77.8,27.8C-80.7,8.9,-71.8,-11.3,-61.7,-28.5C-51.6,-45.7,-40.2,-59.9,-26.3,-69.3C-12.4,-78.7,4,-83.3,18.8,-78.9C33.7,-74.4,45.9,-60.8,49.2,-56.1Z"
+                transform="translate(100 100)"
+              />
+            </svg>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row items-center justify-between relative z-10"
+          >
+            <div class="md:w-2/3 text-left mb-6 md:mb-0">
+              <h3 class="text-2xl font-bold mb-2">
+                Join Us in Making a Difference
+              </h3>
+              <p>
+                Every trip you take with us contributes to environmental
+                conservation and sustainable communities.
+              </p>
+            </div>
+            <div class="md:w-1/3 flex justify-end">
+              <a
+                href="#contact"
+                class="inline-block bg-white text-green-700 hover:bg-green-100 px-8 py-3 rounded-full font-semibold transition duration-300 shadow-lg"
+              >
+                <i class="fas fa-paper-plane mr-2"></i>Plan Your Eco-Trip
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Shape Divider - from hero section -->
+      <div class="custom-shape-divider bottom mt-20">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
 
@@ -704,76 +1322,352 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="py-20 px-4 bg-white">
-      <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    <section
+      id="testimonials"
+      class="py-20 bg-gradient-to-b from-white to-green-50 relative overflow-hidden"
+    >
+      <!-- Background decoration elements -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-10 right-10 opacity-10">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <path
+              d="M20,50 Q50,0 80,50 T140,50 T200,50"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+            <path
+              d="M0,100 Q30,50 60,100 T120,100 T180,100"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+            <path
+              d="M20,150 Q50,100 80,150 T140,150 T200,150"
+              stroke="#2F855A"
+              stroke-width="3"
+              fill="none"
+            />
+          </svg>
+        </div>
+        <div class="absolute bottom-10 left-10 opacity-10">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <circle
+              cx="100"
+              cy="100"
+              r="50"
+              stroke="#2F855A"
+              stroke-width="2"
+              fill="none"
+            />
+            <circle
+              cx="100"
+              cy="100"
+              r="30"
+              stroke="#2F855A"
+              stroke-width="2"
+              fill="none"
+            />
+            <circle
+              cx="100"
+              cy="100"
+              r="70"
+              stroke="#2F855A"
+              stroke-width="2"
+              fill="none"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-4">
+        <!-- Section heading -->
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">
             What Our Travelers Say
           </h2>
-          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Hear from travelers who have experienced our eco-friendly
-            adventures.
+          <div class="w-24 h-1 bg-green-500 mx-auto mb-6 rounded-full"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Hear from travelers who have experienced our eco-friendly adventures
+            and joined us in our mission for sustainable tourism.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Quote icon decoration -->
+        <div class="relative">
           <div
-            class="p-8 rounded-xl shadow-md testimonial-card text-white"
-            data-aos="fade-up"
-            data-aos-delay="100"
+            class="absolute -top-8 left-1/2 transform -translate-x-1/2 text-green-100 opacity-30"
+            data-aos="fade"
           >
-            <div class="flex items-center mb-4">
+            <i class="fas fa-quote-left text-8xl"></i>
+          </div>
+        </div>
+
+        <!-- Testimonial Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="relative group" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-2 border-b-4 border-green-500"
+            >
               <div
-                class="w-12 h-12 rounded-full bg-green-200 flex items-center justify-center mr-4"
+                class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-green-500 rounded-full w-16 h-16 flex items-center justify-center text-white shadow-lg overflow-hidden"
               >
-                <i class="fas fa-user text-green-600"></i>
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small_2x/beautiful-latin-woman-avatar-character-icon-free-vector.jpg"
+                  alt="Sarah Johnson"
+                  class="object-cover h-full w-full"
+                />
               </div>
-              <div>
-                <h4 class="font-semibold">Sarah Johnson</h4>
-                <p class="text-green-100">Costa Rica Tour</p>
+              <div class="text-center pt-6 mt-4">
+                <div class="flex justify-center mb-3">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <p class="text-gray-600 italic mb-4">
+                  "This was the most environmentally conscious trip I've ever
+                  taken. I loved how every aspect of the tour was designed to
+                  minimize impact while maximizing experience. The use of local
+                  guides and eco-friendly transport made the journey even more
+                  meaningful."
+                </p>
+                <h4 class="font-semibold text-green-700">Sarah Johnson</h4>
+                <p class="text-gray-500 text-sm">Costa Rica Tour</p>
               </div>
-            </div>
-            <p class="italic">
-              "This was the most environmentally conscious trip I've ever taken.
-              I loved how every aspect of the tour was designed to minimize
-              impact while maximizing experience."
-            </p>
-            <div class="mt-4 flex">
-              <i class="fas fa-star text-yellow-300"></i>
-              <i class="fas fa-star text-yellow-300"></i>
-              <i class="fas fa-star text-yellow-300"></i>
-              <i class="fas fa-star text-yellow-300"></i>
-              <i class="fas fa-star text-yellow-300"></i>
             </div>
           </div>
 
-          <div
-            class="p-8 rounded-xl shadow-md testimonial-card text-white"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="flex items-center mb-4">
+          <!-- Testimonial 2 -->
+          <div class="relative group" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-2 border-b-4 border-green-500"
+            >
               <div
-                class="w-12 h-12 rounded-full bg-green-200 flex items-center justify-center mr-4"
+                class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-green-500 rounded-full w-16 h-16 flex items-center justify-center text-white shadow-lg overflow-hidden"
               >
-                <i class="fas fa-user text-green-600"></i>
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/006/487/917/small_2x/man-avatar-icon-free-vector.jpg"
+                  alt="Mark Thompson"
+                  class="object-cover h-full w-full"
+                />
               </div>
-              <div>
-                <h4 class="font-semibold">Mark Thompson</h4>
-                <p class="text-green-100">Norway Adventure</p>
+              <div class="text-center pt-6 mt-4">
+                <div class="flex justify-center mb-3">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <p class="text-gray-600 italic mb-4">
+                  "The guides were extremely knowledgeable about local
+                  ecosystems and sustainability practices. I came back not just
+                  with amazing memories but with new eco-friendly habits."
+                </p>
+                <h4 class="font-semibold text-green-700">Mark Thompson</h4>
+                <p class="text-gray-500 text-sm">Norway Adventure</p>
               </div>
             </div>
-            <p class="italic">
-              "The guides were extremely knowledgeable about local ecosystems
-              and sustainability practices. I came back not just with amazing
-              memories but with new eco-friendly habits."
-            </p>
-            <div class="mt-4 flex">
-              <i class="fas fa-star text-yellow-300"></i>
-              <i class="fas fa-star text-yellow-300"></i>
-              <i class="fas fa-star text-yellow-300"></i>
-              <i class="fas fa-star text-yellow-300"></i>
-              <i class="fas fa-star text-yellow-300"></i>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="relative group" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="bg-white rounded-2xl p-8 shadow-lg group-hover:shadow-xl transition-all duration-300 transform group-hover:-translate-y-2 border-b-4 border-green-500"
+            >
+              <div
+                class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-green-500 rounded-full w-16 h-16 flex items-center justify-center text-white shadow-lg overflow-hidden"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/194/194938.png"
+                  alt="Mei Lin"
+                  class="object-cover h-full w-full"
+                />
+              </div>
+              <div class="text-center pt-6 mt-4">
+                <div class="flex justify-center mb-3">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star-half-alt text-yellow-400"></i>
+                </div>
+                <p class="text-gray-600 italic mb-4">
+                  "Traveling with an eco-conscious company made all the
+                  difference. The wildlife encounters were respectful and
+                  educational, and I felt good knowing my trip was supporting
+                  conservation efforts."
+                </p>
+                <h4 class="font-semibold text-green-700">Mei Lin</h4>
+                <p class="text-gray-500 text-sm">Japan Eco-Tour</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Testimonial -->
+        <div
+          class="mt-16 bg-green-600 rounded-2xl p-8 shadow-lg text-white"
+          data-aos="fade-up"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div class="order-2 md:order-1">
+              <h3 class="text-2xl font-bold mb-4">Hear From Our Community</h3>
+              <p class="mb-4">
+                Our travelers aren't just customers - they become part of our
+                global community committed to sustainable travel and
+                environmental conservation.
+              </p>
+              <div class="flex items-center">
+                <div class="flex -space-x-4 mr-4">
+                  <div
+                    class="w-10 h-10 rounded-full border-2 border-white overflow-hidden"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/194/194938.png"
+                      alt="Community member"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full border-2 border-white overflow-hidden"
+                  >
+                    <img
+                      src="https://static.vecteezy.com/system/resources/thumbnails/006/487/917/small_2x/man-avatar-icon-free-vector.jpg"
+                      alt="Community member"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div
+                    class="w-10 h-10 rounded-full border-2 border-white overflow-hidden"
+                  >
+                    <img
+                      src="https://static.vecteezy.com/system/resources/thumbnails/001/993/889/small_2x/beautiful-latin-woman-avatar-character-icon-free-vector.jpg"
+                      alt="Community member"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div
+                    class="w-10 h-10 bg-green-700 rounded-full border-2 border-white flex items-center justify-center text-xs font-bold"
+                  >
+                    +25
+                  </div>
+                </div>
+                <p class="text-green-100">Join our growing community</p>
+              </div>
+              <div class="mt-6">
+                <a
+                  href="#share-story"
+                  class="inline-block bg-white text-green-700 hover:bg-green-100 px-8 py-3 rounded-full font-semibold transition duration-300"
+                >
+                  <i class="fas fa-pen-alt mr-2"></i>Share Your Story
+                </a>
+              </div>
+            </div>
+            <div class="order-1 md:order-2 relative">
+              <div
+                class="aspect-w-16 aspect-h-9 bg-green-700 rounded-xl overflow-hidden relative"
+              >
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div
+                    class="w-20 h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-100 transition duration-300"
+                  >
+                    <i class="fas fa-play text-green-600 text-2xl pl-1"></i>
+                  </div>
+                </div>
+                <img
+                  src="https://www.picmaker.com/templates/_next/image?url=https%3A%2F%2Fstatic.picmaker.com%2Fscene-prebuilts%2Fthumbnails%2FYT-0090.png&w=3840&q=75"
+                  alt="Video testimonial thumbnail"
+                  class="w-full h-full object-cover opacity-70"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Ratings Overview -->
+        <div
+          class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <!-- Overall Rating -->
+          <div class="bg-green-50 rounded-xl p-6 text-center">
+            <div class="flex items-center justify-center mb-2">
+              <div class="text-green-800 text-4xl font-bold">4.9</div>
+              <div class="ml-2 text-yellow-400">
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-green-700 text-sm">Overall Rating</p>
+          </div>
+
+          <!-- Eco-Friendly -->
+          <div class="bg-green-50 rounded-xl p-6 text-center">
+            <div class="flex items-center justify-center mb-2">
+              <div class="text-green-800 text-4xl font-bold">5.0</div>
+              <div class="ml-2 text-yellow-400">
+                <i class="fas fa-leaf"></i>
+              </div>
+            </div>
+            <p class="text-green-700 text-sm">Eco-Friendliness</p>
+          </div>
+
+          <!-- Experience -->
+          <div class="bg-green-50 rounded-xl p-6 text-center">
+            <div class="flex items-center justify-center mb-2">
+              <div class="text-green-800 text-4xl font-bold">4.8</div>
+              <div class="ml-2 text-yellow-400">
+                <i class="fas fa-hiking"></i>
+              </div>
+            </div>
+            <p class="text-green-700 text-sm">Experience Quality</p>
+          </div>
+
+          <!-- Guide Knowledge -->
+          <div class="bg-green-50 rounded-xl p-6 text-center">
+            <div class="flex items-center justify-center mb-2">
+              <div class="text-green-800 text-4xl font-bold">4.9</div>
+              <div class="ml-2 text-yellow-400">
+                <i class="fas fa-book-reader"></i>
+              </div>
+            </div>
+            <p class="text-green-700 text-sm">Guide Knowledge</p>
+          </div>
+        </div>
+
+        <!-- Featured on -->
+        <div class="mt-16 text-center" data-aos="fade-up">
+          <p class="text-gray-500 mb-6">FEATURED IN</p>
+          <div
+            class="flex flex-wrap justify-center items-center gap-8 opacity-70"
+          >
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-globe text-3xl text-blue-400"></i>
+              <span class="ml-2 text-blue-500 font-medium">EcoTravel</span>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-mountain text-3xl text-green-400"></i>
+              <span class="ml-2 text-green-500 font-medium">GreenLife</span>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-leaf text-3xl text-green-400"></i>
+              <span class="ml-2 text-green-500 font-medium">EarthMag</span>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-water text-3xl text-blue-400"></i>
+              <span class="ml-2 text-blue-500 font-medium">NatGeo</span>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-tree text-3xl text-green-400"></i>
+              <span class="ml-2 text-green-500 font-medium">WildWay</span>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-globe text-3xl text-blue-400"></i>
+              <span class="ml-2 text-blue-500 font-medium">ScopeIt</span>
             </div>
           </div>
         </div>
@@ -781,27 +1675,300 @@
     </section>
 
     <!-- Newsletter -->
-    <section class="py-16 px-4 bg-green-600 text-white">
-      <div class="max-w-6xl mx-auto">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-          <div class="mb-6 md:mb-0" data-aos="fade-right">
-            <h3 class="text-2xl font-bold mb-2">Join Our Newsletter</h3>
-            <p>Get exclusive eco-travel tips and special offers.</p>
-          </div>
-          <div class="w-full md:w-1/2" data-aos="fade-left">
-            <form class="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Your email address"
-                class="flex-grow px-4 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-green-400 text-gray-800"
-              />
-              <button
-                type="submit"
-                class="bg-white text-green-600 hover:bg-green-100 px-6 py-3 rounded-full font-semibold transition duration-300"
+    <section
+      class="py-20 bg-gradient-to-r from-green-600 to-green-700 text-white relative overflow-hidden"
+    >
+      <!-- Background -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          class="absolute top-0 left-0 opacity-10 transform -translate-x-1/4 -translate-y-1/4"
+        >
+          <svg width="400" height="400" viewBox="0 0 400 400">
+            <circle
+              cx="200"
+              cy="200"
+              r="150"
+              stroke="#ffffff"
+              stroke-width="2"
+              fill="none"
+            />
+            <circle
+              cx="200"
+              cy="200"
+              r="120"
+              stroke="#ffffff"
+              stroke-width="2"
+              fill="none"
+            />
+            <circle
+              cx="200"
+              cy="200"
+              r="90"
+              stroke="#ffffff"
+              stroke-width="2"
+              fill="none"
+            />
+          </svg>
+        </div>
+        <div
+          class="absolute bottom-0 right-0 opacity-10 transform translate-x-1/4 translate-y-1/4"
+        >
+          <svg width="400" height="400" viewBox="0 0 400 400">
+            <circle
+              cx="200"
+              cy="200"
+              r="150"
+              stroke="#ffffff"
+              stroke-width="2"
+              fill="none"
+            />
+            <circle
+              cx="200"
+              cy="200"
+              r="120"
+              stroke="#ffffff"
+              stroke-width="2"
+              fill="none"
+            />
+            <circle
+              cx="200"
+              cy="200"
+              r="90"
+              stroke="#ffffff"
+              stroke-width="2"
+              fill="none"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-4 relative z-10">
+        <div class="bg-green-700 rounded-3xl shadow-2xl overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <!-- Left Side - Newsletter Info -->
+            <div class="p-8 md:p-12 relative" data-aos="fade-right">
+              <div class="absolute top-0 left-0 w-32 h-32 opacity-10">
+                <svg viewBox="0 0 24 24" width="100%" height="100%">
+                  <path
+                    fill="currentColor"
+                    d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8l-8,5L4,8V6l8,5l8-5V8z"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-green-600 mb-6"
               >
-                Subscribe
-              </button>
-            </form>
+                <i class="fas fa-envelope text-2xl"></i>
+              </div>
+
+              <h3 class="text-3xl font-bold mb-4">
+                Stay Connected With Nature
+              </h3>
+              <p class="text-lg mb-6 text-green-50">
+                Subscribe to our newsletter and join thousands of eco-conscious
+                travelers. Get sustainable travel tips, exclusive offers, and
+                stories from around the world.
+              </p>
+
+              <div class="flex flex-wrap gap-4 mb-8">
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  <span>Weekly eco-tips</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  <span>Destination guides</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  <span>Early discounts</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle mr-2"></i>
+                  <span>Conservation updates</span>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <a
+                  href="#"
+                  class="text-white hover:text-green-200 transition duration-300"
+                >
+                  <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-white hover:text-green-200 transition duration-300"
+                >
+                  <i class="fab fa-facebook text-xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-white hover:text-green-200 transition duration-300"
+                >
+                  <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-white hover:text-green-200 transition duration-300"
+                >
+                  <i class="fab fa-youtube text-xl"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Side - Subscription Form -->
+            <div
+              class="bg-white p-8 md:p-12 text-gray-800 flex flex-col justify-center"
+              data-aos="fade-left"
+            >
+              <h4 class="text-2xl font-bold text-green-800 mb-2">
+                Join Our Newsletter
+              </h4>
+              <p class="text-gray-600 mb-6">
+                Get exclusive eco-travel tips and special offers.
+              </p>
+
+              <form id="newsletterForm" class="space-y-4">
+                <div>
+                  <label
+                    for="fullname"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Full Name</label
+                  >
+                  <div class="relative">
+                    <div
+                      class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-gray-400"
+                    >
+                      <i class="fas fa-user"></i>
+                    </div>
+                    <input
+                      type="text"
+                      id="fullname"
+                      placeholder="Your name"
+                      class="w-full pl-10 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Email Address</label
+                  >
+                  <div class="relative">
+                    <div
+                      class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-gray-400"
+                    >
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Your email address"
+                      class="w-full pl-10 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
+                    />
+                  </div>
+                  <p id="emailError" class="text-red-500 text-xs mt-1 hidden">
+                    Please enter a valid email address
+                  </p>
+                </div>
+
+                <div>
+                  <label class="flex items-center">
+                    <input
+                      type="checkbox"
+                      class="h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded"
+                    />
+                    <span class="ml-2 text-sm text-gray-600">
+                      I agree to receive eco-travel updates and offers
+                    </span>
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  id="subscribeBtn"
+                  class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center"
+                >
+                  <i class="fas fa-paper-plane mr-2"></i>
+                  Subscribe Now
+                </button>
+              </form>
+
+              <p class="text-xs text-gray-500 mt-4">
+                By subscribing, you agree to our Privacy Policy. We respect your
+                privacy and will never share your information.
+              </p>
+
+              <div class="flex items-center mt-8">
+                <div class="flex -space-x-2 mr-3">
+                  <div
+                    class="w-8 h-8 rounded-full border-2 border-white overflow-hidden"
+                  >
+                    <img
+                      src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/11_avatar-512.png"
+                      alt="Subscriber"
+                      class="object-cover h-full w-full"
+                    />
+                  </div>
+                  <div
+                    class="w-8 h-8 rounded-full border-2 border-white overflow-hidden"
+                  >
+                    <img
+                      src="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg"
+                      alt="Subscriber"
+                      class="object-cover h-full w-full"
+                    />
+                  </div>
+                  <div
+                    class="w-8 h-8 rounded-full border-2 border-white overflow-hidden"
+                  >
+                    <img
+                      src="https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
+                      alt="Subscriber"
+                      class="object-cover h-full w-full"
+                    />
+                  </div>
+                </div>
+                <span class="text-sm text-gray-500">Join 10K+ subscribers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partner logos -->
+        <div class="mt-12 text-center opacity-80" data-aos="fade-up">
+          <p class="text-green-100 mb-6 text-sm uppercase tracking-wide">
+            Trusted By Environmental Organizations
+          </p>
+          <div class="flex flex-wrap justify-center items-center gap-8">
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-globe text-3xl text-blue-400"></i>
+              <span class="ml-2 font-medium text-gray-100">EcoOrg</span>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-tree text-3xl text-green-500"></i>
+              <span class="ml-2 font-medium text-gray-100">GreenEarth</span>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-leaf text-3xl text-emerald-400"></i>
+              <span class="ml-2 font-medium text-gray-100">EcoTrust</span>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-mountain text-3xl text-gray-400"></i>
+              <span class="ml-2 font-medium text-gray-100">NaturePro</span>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-recycle text-3xl text-green-300"></i>
+              <span class="ml-2 font-medium text-gray-100">RePlanet</span>
+            </div>
+            <div class="w-24 h-12 flex items-center justify-center">
+              <i class="fas fa-seedling text-3xl text-lime-300"></i>
+              <span class="ml-2 font-medium text-gray-100">GreFuture</span>
+            </div>
           </div>
         </div>
       </div>
