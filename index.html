@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Travel - Eco-Friendly Adventures</title>
+    <link rel="icon" href="./public/favicon.svg" type="image/svg+xml" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <!-- AOS Animation Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-green-50 text-gray-800">
+    <!-- Header -->
+    <header class="header-gradient text-white sticky top-0 z-50 header-shadow">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <!-- Logo  -->
+        <h1 class="text-2xl md:text-3xl font-bold flex items-center space-x-2">
+          <div class="p-2 leaf-animation">
+            <i class="fas fa-leaf text-green-200"></i>
+          </div>
+          <span class="tracking-wide logo-text">
+            <span class="text-white">Green</span
+            ><span class="text-green-200">Travel</span>
+          </span>
+        </h1>
+
+        <!-- Hamburger button -->
+        <button
+          id="menu-toggle"
+          class="md:hidden text-2xl focus:outline-none hover:text-green-200 transition p-2"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex space-x-10">
+          <a
+            href="#home"
+            class="nav-link font-medium hover:text-green-200 transition py-1 text-green-200 active"
+            ><i class="fas fa-home mr-1 text-green-200"></i>Home</a
+          >
+
+          <a
+            href="#features"
+            class="nav-link font-medium hover:text-green-200 transition py-1"
+            ><i class="fas fa-star mr-1"></i>Features</a
+          >
+          <a
+            href="#destinations"
+            class="nav-link font-medium hover:text-green-200 transition py-1"
+          >
+            <i class="fas fa-map-marked-alt mr-1"></i>Destinations</a
+          >
+          <a
+            href="#testimonials"
+            class="nav-link font-medium hover:text-green-200 transition py-1"
+          >
+            <i class="fas fa-comment mr-1"></i>Testimonials</a
+          >
+          <a
+            href="#contact"
+            class="nav-link font-medium hover:text-green-200 transition py-1 flex items-center"
+          >
+            <i class="fas fa-envelope text-sm mr-1"></i>Contact
+          </a>
+        </nav>
+      </div>
+
+      <!-- Mobile nav -->
+      <div
+        id="menu"
+        class="md:hidden hidden flex-col bg-green-700 text-white w-full px-4 py-4 space-y-3 absolute top-full left-0 shadow-md mobile-menu-enter"
+      >
+        <a
+          href="#home"
+          class="block hover:bg-green-600 px-4 py-3 rounded-lg transition flex items-center"
+        >
+          <i class="fas fa-home mr-3 text-green-200"></i>
+          <span>Home</span>
+        </a>
+        <a
+          href="#features"
+          class="block hover:bg-green-600 px-4 py-3 rounded-lg transition flex items-center"
+        >
+          <i class="fas fa-star mr-3 text-green-200"></i>
+          <span>Features</span>
+        </a>
+        <a
+          href="#destinations"
+          class="block hover:bg-green-600 px-4 py-3 rounded-lg transition flex items-center"
+        >
+          <i class="fas fa-map-marked-alt mr-3 text-green-200"></i>
+          <span>Destinations</span>
+        </a>
+        <a
+          href="#testimonials"
+          class="block hover:bg-green-600 px-4 py-3 rounded-lg transition flex items-center"
+        >
+          <i class="fas fa-comment mr-3 text-green-200"></i>
+          <span>Testimonials</span>
+        </a>
+        <a
+          href="#contact"
+          class="block hover:bg-green-600 px-4 py-3 rounded-lg transition flex items-center"
+        >
+          <i class="fas fa-envelope mr-3 text-green-200"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section id="home" class="hero-bg text-white py-24 md:py-32 relative">
+      <div
+        class="max-w-6xl mx-auto px-4 text-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h2
+          class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+        >
+          Explore Nature, <span class="text-green-300">Protect</span> the
+          Environment
+        </h2>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-100">
+          Join us on safe, meaningful, and eco-friendly journeys that respect
+          and preserve our planet.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            href="#contact"
+            class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center"
+          >
+            <i class="fas fa-paper-plane mr-2"></i>Book Your Trip
+          </a>
+          <a
+            href="#features"
+            class="bg-transparent border-2 border-white hover:bg-white hover:text-green-700 text-white px-8 py-4 rounded-full font-semibold transition duration-300 inline-flex items-center justify-center"
+          >
+            <i class="fas fa-info-circle mr-2"></i>Learn More
+          </a>
+        </div>
+      </div>
+      <div class="custom-shape-divider bottom">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-green-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white rounded-xl p-8 shadow-md text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="text-green-500 text-4xl font-bold mb-2">10K+</div>
+            <p class="text-gray-600">Travelers Joined</p>
+          </div>
+          <div
+            class="bg-white rounded-xl p-8 shadow-md text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="text-green-500 text-4xl font-bold mb-2">50+</div>
+            <p class="text-gray-600">Eco Destinations</p>
+          </div>
+          <div
+            class="bg-white rounded-xl p-8 shadow-md text-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="text-green-500 text-4xl font-bold mb-2">100%</div>
+            <p class="text-gray-600">Carbon Offset</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20 px-4 bg-white relative">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Our Eco-Friendly Approach
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            We're committed to sustainable travel that protects our planet while
+            creating unforgettable experiences.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="p-4 mb-6">
+              <i class="fas fa-tree text-green-600 text-5xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Forest Conservation</h3>
+            <p class="text-gray-600">
+              Our tours actively support forest preservation programs and
+              eliminate single-use plastic waste.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="p-4 mb-6">
+              <i class="fas fa-recycle text-green-600 text-5xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Sustainable Practices</h3>
+            <p class="text-gray-600">
+              We encourage travelers to use environmentally friendly products
+              and follow leave-no-trace principles.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="p-4 mb-6">
+              <i class="fas fa-bicycle text-green-600 text-5xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Green Transportation</h3>
+            <p class="text-gray-600">
+              We prioritize non-polluting transportation options including
+              bicycles, electric vehicles, and walking tours.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="p-4 mb-6">
+              <i class="fas fa-users text-green-600 text-5xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Community Support</h3>
+            <p class="text-gray-600">
+              We partner with local communities to ensure tourism benefits
+              residents through fair wages and cultural preservation projects.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="p-4 mb-6">
+              <i class="fas fa-utensils text-green-600 text-5xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Sustainable Dining</h3>
+            <p class="text-gray-600">
+              We serve locally-sourced, organic foods that reduce food miles and
+              support sustainable agriculture in every destination.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-8 rounded-xl shadow-md text-center feature-card transition duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="p-4 mb-6">
+              <i class="fas fa-hand-holding-heart text-green-600 text-5xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Wildlife Protection</h3>
+            <p class="text-gray-600">
+              Our tours support animal conservation efforts and never include
+              activities that exploit or harm wildlife in their natural
+              habitats.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section id="destinations" class="py-20 px-4 bg-green-50">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Popular Eco Destinations
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Discover incredible places while making a positive impact on local
+            communities and ecosystems.
+          </p>
+        </div>
+
+        <div class="carousel-container mb-10">
+          <div class="carousel-track mb-5">
+            <!-- Slide 1 -->
+            <div class="carousel-slide px-4">
+              <div
+                class="destination-card rounded-xl overflow-hidden shadow-md bg-white"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="h-64 overflow-hidden">
+                  <img
+                    src="https://media.istockphoto.com/id/1136250609/photo/arenal-volcano-costa-rica.jpg?s=612x612&w=0&k=20&c=2fDgH1lAXe17ClB2OwJThMw5WLjUd6QgvrKtwiSMwO4="
+                    alt="Costa Rica Rainforest"
+                    class="w-full h-full object-cover transition duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-semibold">Costa Rica</h3>
+                    <span class="text-green-600 font-medium">$1,299</span>
+                  </div>
+                  <p class="text-gray-600 mb-4">
+                    Explore pristine rainforests, volcanoes, and beautiful
+                    beaches while supporting conservation efforts.
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500"
+                      ><i class="far fa-calendar-alt mr-1"></i> 7 Days</span
+                    >
+                    <a
+                      href="#contact"
+                      class="text-green-600 hover:text-green-700 font-medium"
+                      >Learn More →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide px-4">
+              <div
+                class="destination-card rounded-xl overflow-hidden shadow-md bg-white"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="h-64 overflow-hidden">
+                  <img
+                    src="https://c4.wallpaperflare.com/wallpaper/439/843/790/amazing-viewpoint-fjords-fjord-wallpaper-preview.jpg"
+                    alt="Norway Fjords"
+                    class="w-full h-full object-cover transition duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-semibold">Norway</h3>
+                    <span class="text-green-600 font-medium">$1,599</span>
+                  </div>
+                  <p class="text-gray-600 mb-4">
+                    Discover fjords, mountains and green cities with sustainable
+                    transportation throughout.
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500"
+                      ><i class="far fa-calendar-alt mr-1"></i> 10 Days</span
+                    >
+                    <a
+                      href="#contact"
+                      class="text-green-600 hover:text-green-700 font-medium"
+                      >Learn More →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide px-4">
+              <div
+                class="destination-card rounded-xl overflow-hidden shadow-md bg-white"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="h-64 overflow-hidden">
+                  <img
+                    src="https://www.shutterstock.com/shutterstock/videos/3528917055/thumb/1.jpg?ip=x480"
+                    alt="New Zealand Mountains"
+                    class="w-full h-full object-cover transition duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-semibold">New Zealand</h3>
+                    <span class="text-green-600 font-medium">$1,799</span>
+                  </div>
+                  <p class="text-gray-600 mb-4">
+                    Experience stunning landscapes with eco-lodges and support
+                    for native wildlife conservation.
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500"
+                      ><i class="far fa-calendar-alt mr-1"></i> 12 Days</span
+                    >
+                    <a
+                      href="#contact"
+                      class="text-green-600 hover:text-green-700 font-medium"
+                      >Learn More →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide px-4">
+              <div
+                class="destination-card rounded-xl overflow-hidden shadow-md bg-white"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="h-64 overflow-hidden">
+                  <img
+                    src="https://w0.peakpx.com/wallpaper/915/133/HD-wallpaper-cave-glacier-iceland-vatnajokull-national-park-travel.jpg"
+                    alt="Iceland Glaciers"
+                    class="w-full h-full object-cover transition duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-semibold">Iceland</h3>
+                    <span class="text-green-600 font-medium">$1,899</span>
+                  </div>
+                  <p class="text-gray-600 mb-4">
+                    Discover geothermal wonders, glaciers, and waterfalls with
+                    renewable energy accommodations.
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500"
+                      ><i class="far fa-calendar-alt mr-1"></i> 9 Days</span
+                    >
+                    <a
+                      href="#contact"
+                      class="text-green-600 hover:text-green-700 font-medium"
+                      >Learn More →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-slide px-4">
+              <div
+                class="destination-card rounded-xl overflow-hidden shadow-md bg-white"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="h-64 overflow-hidden">
+                  <img
+                    src="https://media.istockphoto.com/id/626815916/photo/full-view-of-palau-malakal-island-and-koror.jpg?s=612x612&w=0&k=20&c=NJP1-9yTo-u9ORX2NVLXa3BSXw3d6PKh9zYhk_xUolk="
+                    alt="Palau Islands"
+                    class="w-full h-full object-cover transition duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-semibold">Palau</h3>
+                    <span class="text-green-600 font-medium">$2,199</span>
+                  </div>
+                  <p class="text-gray-600 mb-4">
+                    Explore marine sanctuaries and pristine coral reefs while
+                    supporting ocean conservation initiatives.
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500"
+                      ><i class="far fa-calendar-alt mr-1"></i> 8 Days</span
+                    >
+                    <a
+                      href="#contact"
+                      class="text-green-600 hover:text-green-700 font-medium"
+                      >Learn More →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="carousel-slide px-4">
+              <div
+                class="destination-card rounded-xl overflow-hidden shadow-md bg-white"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="h-64 overflow-hidden">
+                  <img
+                    src="https://www.shutterstock.com/shutterstock/videos/1026711230/thumb/1.jpg?ip=x480"
+                    alt="Bhutan Mountains"
+                    class="w-full h-full object-cover transition duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-semibold">Bhutan</h3>
+                    <span class="text-green-600 font-medium">$2,399</span>
+                  </div>
+                  <p class="text-gray-600 mb-4">
+                    Visit the carbon-negative kingdom with its pristine forests,
+                    ancient monasteries.
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500"
+                      ><i class="far fa-calendar-alt mr-1"></i> 11 Days</span
+                    >
+                    <a
+                      href="#contact"
+                      class="text-green-600 hover:text-green-700 font-medium"
+                      >Learn More →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="carousel-slide px-4">
+              <div
+                class="destination-card rounded-xl overflow-hidden shadow-md bg-white"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="h-64 overflow-hidden">
+                  <img
+                    src="https://c4.wallpaperflare.com/wallpaper/268/607/584/amazon-river-river-amazon-rainforest-rainforest-wallpaper-preview.jpg"
+                    alt="Amazon Rainforest"
+                    class="w-full h-full object-cover transition duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-semibold">Amazon Rainforest</h3>
+                    <span class="text-green-600 font-medium">$1,999</span>
+                  </div>
+                  <p class="text-gray-600 mb-4">
+                    Experience the world's largest rainforest with indigenous
+                    guides and support rainforest protection projects.
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500"
+                      ><i class="far fa-calendar-alt mr-1"></i> 10 Days</span
+                    >
+                    <a
+                      href="#contact"
+                      class="text-green-600 hover:text-green-700 font-medium"
+                      >Learn More →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 8 -->
+            <div class="carousel-slide px-4">
+              <div
+                class="destination-card rounded-xl overflow-hidden shadow-md bg-white"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="h-64 overflow-hidden">
+                  <img
+                    src="https://media.istockphoto.com/id/494314515/photo/panorama-of-ljubljana-slovenia-europe.jpg?s=612x612&w=0&k=20&c=1SbeSdqwM0JSxIDcACk-9zzo3yX8f3rsTG9pJUi3M8A="
+                    alt="Slovenia Countryside"
+                    class="w-full h-full object-cover transition duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-semibold">Slovenia</h3>
+                    <span class="text-green-600 font-medium">$1,499</span>
+                  </div>
+                  <p class="text-gray-600 mb-4">
+                    Explore Europe’s green gem with alpine lakes, eco farms, and
+                    certified stays.
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500"
+                      ><i class="far fa-calendar-alt mr-1"></i> 8 Days</span
+                    >
+                    <a
+                      href="#contact"
+                      class="text-green-600 hover:text-green-700 font-medium"
+                      >Learn More →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 9 -->
+            <div class="carousel-slide px-4">
+              <div
+                class="destination-card rounded-xl overflow-hidden shadow-md bg-white"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="h-64 overflow-hidden">
+                  <img
+                    src="https://i.ytimg.com/vi/t6hPrYsXi5I/maxresdefault.jpg"
+                    alt="Japan Rural Countryside"
+                    class="w-full h-full object-cover transition duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-xl font-semibold">Rural Japan</h3>
+                    <span class="text-green-600 font-medium">$2,099</span>
+                  </div>
+                  <p class="text-gray-600 mb-4">
+                    Experience traditional Japanese countryside with farm stays,
+                    organic cuisine, and sustainable local crafts.
+                  </p>
+                  <div class="flex justify-between items-center">
+                    <span class="text-gray-500"
+                      ><i class="far fa-calendar-alt mr-1"></i> 14 Days</span
+                    >
+                    <a
+                      href="#contact"
+                      class="text-green-600 hover:text-green-700 font-medium"
+                      >Learn More →</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <button class="carousel-nav-button carousel-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-nav-button carousel-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class="flex justify-center space-x-2 mt-6">
+          <div class="carousel-indicator active" data-index="0"></div>
+          <div class="carousel-indicator" data-index="1"></div>
+          <div class="carousel-indicator" data-index="2"></div>
+        </div>
+
+        <!-- View All Button -->
+        <div class="text-center mt-10">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-full transition duration-300"
+          >
+            <span>View All Destinations</span>
+            <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 px-4 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            What Our Travelers Say
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Hear from travelers who have experienced our eco-friendly
+            adventures.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="p-8 rounded-xl shadow-md testimonial-card text-white"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-green-200 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-user text-green-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Sarah Johnson</h4>
+                <p class="text-green-100">Costa Rica Tour</p>
+              </div>
+            </div>
+            <p class="italic">
+              "This was the most environmentally conscious trip I've ever taken.
+              I loved how every aspect of the tour was designed to minimize
+              impact while maximizing experience."
+            </p>
+            <div class="mt-4 flex">
+              <i class="fas fa-star text-yellow-300"></i>
+              <i class="fas fa-star text-yellow-300"></i>
+              <i class="fas fa-star text-yellow-300"></i>
+              <i class="fas fa-star text-yellow-300"></i>
+              <i class="fas fa-star text-yellow-300"></i>
+            </div>
+          </div>
+
+          <div
+            class="p-8 rounded-xl shadow-md testimonial-card text-white"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center mb-4">
+              <div
+                class="w-12 h-12 rounded-full bg-green-200 flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-user text-green-600"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Mark Thompson</h4>
+                <p class="text-green-100">Norway Adventure</p>
+              </div>
+            </div>
+            <p class="italic">
+              "The guides were extremely knowledgeable about local ecosystems
+              and sustainability practices. I came back not just with amazing
+              memories but with new eco-friendly habits."
+            </p>
+            <div class="mt-4 flex">
+              <i class="fas fa-star text-yellow-300"></i>
+              <i class="fas fa-star text-yellow-300"></i>
+              <i class="fas fa-star text-yellow-300"></i>
+              <i class="fas fa-star text-yellow-300"></i>
+              <i class="fas fa-star text-yellow-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 px-4 bg-green-600 text-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="mb-6 md:mb-0" data-aos="fade-right">
+            <h3 class="text-2xl font-bold mb-2">Join Our Newsletter</h3>
+            <p>Get exclusive eco-travel tips and special offers.</p>
+          </div>
+          <div class="w-full md:w-1/2" data-aos="fade-left">
+            <form class="flex flex-col sm:flex-row gap-3">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="flex-grow px-4 py-3 rounded-full focus:outline-none focus:ring-2 focus:ring-green-400 text-gray-800"
+              />
+              <button
+                type="submit"
+                class="bg-white text-green-600 hover:bg-green-100 px-6 py-3 rounded-full font-semibold transition duration-300"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 px-4 bg-green-50">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Ready for Your Eco-Adventure?
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Contact us to plan your sustainable travel experience tailored to
+            your preferences.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-3">
+            <!-- Form Column -->
+            <div class="lg:col-span-2 p-8" data-aos="fade-right">
+              <div class="flex items-center mb-6">
+                <div class="rounded-full mr-4">
+                  <i class="fas fa-paper-plane text-green-600 text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold">Get in Touch</h3>
+              </div>
+
+              <form class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <div class="relative">
+                      <span class="absolute left-3 top-3 text-gray-400">
+                        <i class="fas fa-user"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="w-full border border-gray-300 px-4 py-2 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
+                        placeholder="Full Name"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative">
+                      <span class="absolute left-3 top-3 text-gray-400">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <input
+                        type="email"
+                        class="w-full border border-gray-300 px-4 py-2 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <div class="relative">
+                      <span class="absolute left-3 top-3 text-gray-400">
+                        <i class="fas fa-phone"></i>
+                      </span>
+                      <input
+                        type="tel"
+                        class="w-full border border-gray-300 px-4 py-2 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
+                        placeholder="Phone Number"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative">
+                      <span class="absolute left-3 top-3 text-gray-400">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </span>
+                      <select
+                        class="w-full border border-gray-300 px-4 py-2 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent appearance-none"
+                      >
+                        <option selected disabled>Select Destination</option>
+                        <option>Costa Rica</option>
+                        <option>Norway</option>
+                        <option>New Zealand</option>
+                        <option>Iceland</option>
+                        <option>Palau</option>
+                        <option>Bhutan</option>
+                        <option>Amazon Rainforest</option>
+                        <option>Slovenia</option>
+                        <option>Rural Japan</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <div class="relative">
+                      <span class="absolute left-3 top-3 text-gray-400">
+                        <i class="fas fa-calendar"></i>
+                      </span>
+                      <input
+                        type="date"
+                        class="w-full border border-gray-300 px-4 py-2 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
+                        placeholder="Preferred Date"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="relative">
+                      <span class="absolute left-3 top-3 text-gray-400">
+                        <i class="fas fa-users"></i>
+                      </span>
+                      <select
+                        class="w-full border border-gray-300 px-4 py-2 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent appearance-none"
+                      >
+                        <option selected disabled>Number of Travelers</option>
+                        <option>1 Person</option>
+                        <option>2 People</option>
+                        <option>3-5 People</option>
+                        <option>6-10 People</option>
+                        <option>11+ People</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="relative">
+                    <span class="absolute left-3 top-3 text-gray-400">
+                      <i class="fas fa-comment"></i>
+                    </span>
+                    <textarea
+                      rows="3"
+                      class="w-full border border-gray-300 px-4 py-2 pl-10 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
+                      placeholder="Tell us about your travel interests and preferences..."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="flex items-center space-x-2 mb-4">
+                  <input
+                    type="checkbox"
+                    id="newsletter"
+                    class="w-4 h-4 rounded text-green-600 focus:ring-green-400 cursor-pointer"
+                  />
+                  <label
+                    for="newsletter"
+                    class="text-sm text-gray-700 cursor-pointer"
+                  >
+                    Subscribe to our newsletter for eco-travel tips and
+                    exclusive offers
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300 flex items-center justify-center"
+                >
+                  <i class="fas fa-paper-plane mr-2"></i>Send Inquiry
+                </button>
+              </form>
+
+              <div
+                class="mt-6 flex items-center justify-center text-sm text-gray-500"
+              >
+                <i class="fas fa-lock mr-2"></i> Your information is secure and
+                will never be shared
+              </div>
+            </div>
+
+            <!-- Info Column -->
+            <div class="bg-green-700 text-white p-8" data-aos="fade-left">
+              <div class="h-full flex flex-col">
+                <h3 class="text-xl font-semibold mb-6 flex items-center">
+                  <i class="fas fa-info-circle mr-2"></i> Contact Information
+                </h3>
+
+                <div class="space-y-6 mb-8">
+                  <div class="flex items-start">
+                    <div class="mr-4">
+                      <i class="fas fa-map-marker-alt text-white ml-0.5"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">Address</p>
+                      <p class="text-green-100">123 Eco Street, Green City</p>
+                      <p class="text-green-100">London, Earth</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="mr-4">
+                      <i class="fas fa-envelope text-white"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">Email</p>
+                      <p class="text-green-100">hello@greentravel.com</p>
+                      <p class="text-green-100">support@greentravel.com</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="mr-4">
+                      <i class="fas fa-phone text-white"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">Phone</p>
+                      <p class="text-green-100">+1 (555) 123-4567</p>
+                      <p class="text-green-100">+1 (555) 765-4321</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start">
+                    <div class="mr-4">
+                      <i class="fas fa-clock text-white"></i>
+                    </div>
+                    <div>
+                      <p class="font-medium">Hours</p>
+                      <p class="text-green-100">Monday - Friday: 9am - 5pm</p>
+                      <p class="text-green-100">Saturday: 10am - 2pm</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-auto">
+                  <p class="font-semibold mb-4">Connect With Us</p>
+                  <div class="flex space-x-3">
+                    <a
+                      href="#"
+                      class="bg-green-600 hover:bg-green-500 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+                    >
+                      <i class="fab fa-facebook-f text-white"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="bg-green-600 hover:bg-green-500 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+                    >
+                      <i class="fab fa-twitter text-white"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="bg-green-600 hover:bg-green-500 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+                    >
+                      <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="bg-green-600 hover:bg-green-500 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+                    >
+                      <i class="fab fa-linkedin-in text-white"></i>
+                    </a>
+                  </div>
+
+                  <div class="mt-8 p-4 bg-green-600 rounded-lg">
+                    <p class="text-sm font-medium mb-2">
+                      Quick Response Guarantee
+                    </p>
+                    <p class="text-xs text-green-100">
+                      We'll respond to your inquiry within 24 hours
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-12">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-2xl font-semibold mb-4 flex items-center">
+              <i class="fas fa-leaf mr-2 text-green-200 leaf-animation"></i>
+              GreenTravel
+            </h3>
+            <p class="text-green-200 mb-4">
+              Sustainable adventures that respect nature and local communities
+              while creating unforgettable experiences.
+            </p>
+            <div class="flex space-x-4 mt-6">
+              <a
+                href="#"
+                class="bg-green-700 hover:bg-green-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+              >
+                <i class="fab fa-facebook-f text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-green-700 hover:bg-green-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+              >
+                <i class="fab fa-twitter text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-green-700 hover:bg-green-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+              >
+                <i class="fab fa-instagram text-white"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-green-700 hover:bg-green-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+              >
+                <i class="fab fa-linkedin-in text-white"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-white">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#home"
+                  class="text-green-200 hover:text-white transition-colors duration-300 flex items-center"
+                >
+                  <i class="fas fa-chevron-right mr-2 text-xs"></i>Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#features"
+                  class="text-green-200 hover:text-white transition-colors duration-300 flex items-center"
+                >
+                  <i class="fas fa-chevron-right mr-2 text-xs"></i>Features
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#destinations"
+                  class="text-green-200 hover:text-white transition-colors duration-300 flex items-center"
+                >
+                  <i class="fas fa-chevron-right mr-2 text-xs"></i>Destinations
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="text-green-200 hover:text-white transition-colors duration-300 flex items-center"
+                >
+                  <i class="fas fa-chevron-right mr-2 text-xs"></i>Testimonials
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-green-200 hover:text-white transition-colors duration-300 flex items-center"
+                >
+                  <i class="fas fa-chevron-right mr-2 text-xs"></i>Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-white">
+              Top Destinations
+            </h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-green-200 hover:text-white transition-colors duration-300 flex items-center"
+                >
+                  <i class="fas fa-map-marker-alt mr-2 text-xs"></i>Costa Rica
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-green-200 hover:text-white transition-colors duration-300 flex items-center"
+                >
+                  <i class="fas fa-map-marker-alt mr-2 text-xs"></i>Norway
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-green-200 hover:text-white transition-colors duration-300 flex items-center"
+                >
+                  <i class="fas fa-map-marker-alt mr-2 text-xs"></i>New Zealand
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-green-200 hover:text-white transition-colors duration-300 flex items-center"
+                >
+                  <i class="fas fa-map-marker-alt mr-2 text-xs"></i>Iceland
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-green-200 hover:text-white transition-colors duration-300 flex items-center"
+                >
+                  <i class="fas fa-map-marker-alt mr-2 text-xs"></i>Japan
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-semibold mb-4 text-white">Contact Us</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt mt-1 mr-3 text-green-300"></i>
+                <span class="text-green-200"
+                  >123 Eco Street, Green City, London, Earth</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-phone mt-1 mr-3 text-green-300"></i>
+                <span class="text-green-200">+1 (555) 123-4567</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-envelope mt-1 mr-3 text-green-300"></i>
+                <span class="text-green-200">hello@greentravel.com</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-clock mt-1 mr-3 text-green-300"></i>
+                <span class="text-green-200"
+                  >Mon-Fri: 9am - 5pm <br />Saturday: 10am - 2pm</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pt-8 mt-8 border-t border-green-700 text-center">
+          <p class="text-green-300 text-sm">
+            © 2025 GreenTravel. All rights reserved. |
+            <a href="#" class="hover:text-white transition-colors duration-300"
+              >Privacy Policy</a
+            >
+            |
+            <a href="#" class="hover:text-white transition-colors duration-300"
+              >Terms of Service</a
+            >
+          </p>
+          <p class="text-green-400 text-xs mt-2">
+            <i class="fas fa-heart mr-1"></i> Committed to sustainable tourism
+            and environmental conservation
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
