@@ -1,6 +1,10 @@
+html,
 body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .hero-bg {
@@ -141,6 +145,7 @@ body {
 
 .carousel-track {
   display: flex;
+  flex-wrap: nowrap;
   transition: transform 0.5s ease-in-out;
 }
 
