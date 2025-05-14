@@ -15,15 +15,6 @@ body {
   position: relative;
 }
 
-.feature-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-card {
-  background-image: linear-gradient(135deg, #9ff5b6, #66bb6a);
-}
-
 .custom-shape-divider {
   position: absolute;
   width: 100%;
@@ -95,14 +86,6 @@ body {
 
 .nav-link.active::after {
   width: 80%;
-}
-
-.logo-text {
-  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
-}
-
-.header-shadow {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
 }
 
 .leaf-animation {
@@ -184,8 +167,7 @@ body {
   justify-content: center;
   cursor: pointer;
   opacity: 0.7;
-  transition: opacity 0.3s ease;
-  z-index: 10;
+  transition: all 0.3s ease;
 }
 
 .carousel-nav-button:hover {
@@ -257,17 +239,13 @@ body {
   }
 }
 
-.hero-title {
-  position: relative;
-}
-
 .hero-subtitle {
   display: inline-block;
   background: linear-gradient(90deg, #4ade80, #22c55e);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: gradient-shift 6s infinite;
+  animation: gradient-shift 1s infinite;
 }
 
 @keyframes gradient-shift {

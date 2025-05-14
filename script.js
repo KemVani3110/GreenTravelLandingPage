@@ -141,89 +141,77 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Newsletter form
-  const newsletterForm = document.getElementById('newsletterForm');
-    if (newsletterForm) {
-      newsletterForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        
-        const emailInput = this.querySelector('input[type="email"]');
-        const submitBtn = document.getElementById('subscribeBtn');
-        const emailError = document.getElementById('emailError');
-        
-        // Validate email
-        if (emailInput.value.trim() === "" || !emailInput.value.includes("@")) {
-          emailInput.classList.add("ring-2", "ring-red-400");
-          emailError.classList.remove("hidden");
-          return;
-        }
-        
-        // Hide error message if previously shown
-        emailError.classList.add("hidden");
-        
-        // Success state
-        const originalText = submitBtn.innerHTML;
-        submitBtn.innerHTML = '<i class="fas fa-check mr-2"></i>Subscribed!';
-        submitBtn.classList.remove('bg-green-600', 'hover:bg-green-700');
-        submitBtn.classList.add('bg-green-500');
-        
-        // Disable inputs during success state
-        const nameInput = document.getElementById('fullname');
-        const checkboxes = newsletterForm.querySelectorAll('input[type="checkbox"]');
-        
-        emailInput.disabled = true;
-        nameInput.disabled = true;
-        submitBtn.disabled = true;
-        checkboxes.forEach(checkbox => checkbox.disabled = true);
-        
-        // Show success animation
-        submitBtn.classList.add('animate-pulse');
-        
-        // Reset after delay
-        setTimeout(() => {
-          emailInput.value = "";
-          nameInput.value = "";
-          emailInput.disabled = false;
-          nameInput.disabled = false;
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalText;
-          submitBtn.classList.remove('animate-pulse', 'bg-green-500');
-          submitBtn.classList.add('bg-green-600', 'hover:bg-green-700');
-          emailInput.classList.remove("ring-2", "ring-red-400");
-          
-          // Re-enable checkboxes
-          checkboxes.forEach(checkbox => {
-            checkbox.disabled = false;
-            checkbox.checked = false;
-          });
-        }, 3000);
-      });
-    }
+  const newsletterForm = document.getElementById("newsletterForm");
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const emailInput = this.querySelector('input[type="email"]');
+      const submitBtn = document.getElementById("subscribeBtn");
+      const emailError = document.getElementById("emailError");
+
+      // Validate email
+      if (emailInput.value.trim() === "" || !emailInput.value.includes("@")) {
+        emailInput.classList.add("ring-2", "ring-red-400");
+        emailError.classList.remove("hidden");
+        return;
+      }
+
+      // Hide error message if previously shown
+      emailError.classList.add("hidden");
+
+      // Success state
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<i class="fas fa-check mr-2"></i>Subscribed!';
+      submitBtn.classList.remove("bg-green-600", "hover:bg-green-700");
+      submitBtn.classList.add("bg-green-500");
+
+      // Disable inputs during success state
+      const nameInput = document.getElementById("fullname");
+      const checkboxes = newsletterForm.querySelectorAll(
+        'input[type="checkbox"]'
+      );
+
+      emailInput.disabled = true;
+      nameInput.disabled = true;
+      submitBtn.disabled = true;
+      checkboxes.forEach((checkbox) => (checkbox.disabled = true));
+
+      // Show success animation
+      submitBtn.classList.add("animate-pulse");
+
+      // Reset after delay
+      setTimeout(() => {
+        emailInput.value = "";
+        nameInput.value = "";
+        emailInput.disabled = false;
+        nameInput.disabled = false;
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+        submitBtn.classList.remove("animate-pulse", "bg-green-500");
+        submitBtn.classList.add("bg-green-600", "hover:bg-green-700");
+        emailInput.classList.remove("ring-2", "ring-red-400");
+
+        // Re-enable checkboxes
+        checkboxes.forEach((checkbox) => {
+          checkbox.disabled = false;
+          checkbox.checked = false;
+        });
+      }, 3000);
+    });
+  }
 
   // Sticky header behavior with scroll class
-  const header = document.querySelector("header");
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
-      header.classList.remove("header-gradient");
-      header.classList.add("bg-green-700");
-    } else {
-      header.classList.add("header-gradient");
-      header.classList.remove("bg-green-700");
-    }
-  });
-
-  // Destination card hover effects
-  const destinationCards = document.querySelectorAll(
-    "#destinations .rounded-xl"
-  );
-  destinationCards.forEach((card) => {
-    card.addEventListener("mouseenter", function () {
-      this.querySelector("img").classList.add("scale-110");
-    });
-
-    card.addEventListener("mouseleave", function () {
-      this.querySelector("img").classList.remove("scale-110");
-    });
-  });
+  // const header = document.querySelector("header");
+  // window.addEventListener("scroll", function () {
+  //   if (window.scrollY > 100) {
+  //     header.classList.remove("header-gradient");
+  //     header.classList.add("bg-green-700");
+  //   } else {
+  //     header.classList.add("header-gradient");
+  //     header.classList.remove("bg-green-700");
+  //   }
+  // });
 
   // Add active state to current section in navigation
   window.addEventListener("scroll", highlightCurrentSection);
@@ -271,10 +259,8 @@ document.addEventListener("DOMContentLoaded", function () {
   backToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
   backToTopBtn.className =
     "fixed bottom-5 right-5 bg-green-600 text-white p-3 shadow-lg opacity-0 transition-opacity duration-300 hover:bg-green-700";
-  backToTopBtn.style.zIndex = "1000";
   backToTopBtn.id = "custom-backtotop";
   document.body.appendChild(backToTopBtn);
-  
 
   backToTopBtn.addEventListener("click", function () {
     window.scrollTo({
@@ -406,13 +392,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Auto-advance carousel every 5 seconds
-  setInterval(() => {
-    if (slideIndex < totalGroups - 1) {
-      moveToSlide(slideIndex + 1);
-    } else {
-      moveToSlide(0);
-    }
-  }, 8000);
+  // setInterval(() => {
+  //   if (slideIndex < totalGroups - 1) {
+  //     moveToSlide(slideIndex + 1);
+  //   } else {
+  //     moveToSlide(0);
+  //   }
+  // }, 8000);
 
   // Initial setup
   moveToSlide(0);
@@ -427,122 +413,127 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-     const counters = document.querySelectorAll('.counter-animation');
-    
-    const animateCounter = (counter, target) => {
-      const speed = 200; // Lower is faster
-      const increment = target / speed;
-      let current = 0;
-      
-      const updateCount = () => {
-        if (current < target) {
-          current += increment;
-          counter.innerText = Math.ceil(current);
-          setTimeout(updateCount, 1);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      
-      updateCount();
+  const counters = document.querySelectorAll(".counter-animation");
+
+  const animateCounter = (counter, target) => {
+    const speed = 300; // Lower is faster
+    const increment = target / speed;
+    let current = 0;
+
+    const updateCount = () => {
+      if (current < target) {
+        current += increment;
+        counter.innerText = Math.ceil(current);
+        setTimeout(updateCount, 1);
+      } else {
+        counter.innerText = target;
+      }
     };
-    
-    // Intersection Observer for counter animation trigger
-    const counterObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+
+    updateCount();
+  };
+
+  // Intersection Observer for counter animation trigger
+  const counterObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const target = parseInt(entry.target.getAttribute('data-count'));
+          const target = parseInt(entry.target.getAttribute("data-count"));
           animateCounter(entry.target, target);
           counterObserver.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.5 });
-    
-    counters.forEach(counter => {
-      counterObserver.observe(counter);
-    });
-    
-    // Earth Indicator Tooltip (simple hover tooltip)
-    const indicators = document.querySelectorAll('.earth-indicator');
-    
-    indicators.forEach(indicator => {
-      indicator.addEventListener('mouseenter', function() {
-        const title = this.getAttribute('title');
-        if (!title) return;
-        
-        const tooltip = document.createElement('div');
-        tooltip.classList.add('indicator-tooltip');
-        tooltip.innerText = title;
-        tooltip.style.position = 'absolute';
-        tooltip.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
-        tooltip.style.color = '#16a34a';
-        tooltip.style.padding = '4px 8px';
-        tooltip.style.borderRadius = '4px';
-        tooltip.style.fontSize = '12px';
-        tooltip.style.fontWeight = 'bold';
-        tooltip.style.zIndex = '10';
-        tooltip.style.whiteSpace = 'nowrap';
-        tooltip.style.top = '-20px';
-        tooltip.style.left = '50%';
-        tooltip.style.transform = 'translateX(-50%)';
-        tooltip.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.2)';
-        
-        this.appendChild(tooltip);
-        this.removeAttribute('title');
-        this._tooltip = tooltip;
-      });
-      
-      indicator.addEventListener('mouseleave', function() {
-        if (this._tooltip) {
-          const text = this._tooltip.innerText;
-          this.setAttribute('title', text);
-          this._tooltip.remove();
-          delete this._tooltip;
-        }
-      });
-    });
-    
-    // Smooth scroll for the scroll-down arrow
-    const scrollArrow = document.querySelector('.scroll-down-arrow');
-    if (scrollArrow) {
-      scrollArrow.addEventListener('click', () => {
-        const featuresSection = document.getElementById('features');
-        if (featuresSection) {
-          featuresSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    }
+    },
+    { threshold: 0.5 }
+  );
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const counters = entry.target.querySelectorAll('.counter-animation');
-            counters.forEach(counter => {
-              const target = parseInt(counter.getAttribute('data-count'));
-              let count = 0;
-              const updateCounter = () => {
-                const increment = target / 50;
-                if (count < target) {
-                  count += increment;
-                  counter.textContent = Math.ceil(count) >= 1000 ? 
-                    Math.ceil(count/1000) + 'K+' : 
-                    Math.ceil(count);
-                  setTimeout(updateCounter, 20);
-                } else {
-                  counter.textContent = target >= 1000 ? 
-                    Math.ceil(target/1000) + 'K+' : 
-                    target;
-                }
-              };
-              updateCounter();
-            });
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
-      
-      document.querySelectorAll('.grid').forEach(grid => {
-        observer.observe(grid);
+  counters.forEach((counter) => {
+    counterObserver.observe(counter);
+  });
+
+  // Earth Indicator Tooltip (simple hover tooltip)
+  const indicators = document.querySelectorAll(".earth-indicator");
+
+  indicators.forEach((indicator) => {
+    indicator.addEventListener("mouseenter", function () {
+      const title = this.getAttribute("title");
+      if (!title) return;
+
+      const tooltip = document.createElement("div");
+      tooltip.classList.add("indicator-tooltip");
+      tooltip.innerText = title;
+      tooltip.style.position = "absolute";
+      tooltip.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+      tooltip.style.color = "#16a34a";
+      tooltip.style.padding = "4px 8px";
+      tooltip.style.borderRadius = "4px";
+      tooltip.style.fontSize = "12px";
+      tooltip.style.fontWeight = "bold";
+      tooltip.style.zIndex = "10";
+      tooltip.style.whiteSpace = "nowrap";
+      tooltip.style.top = "-20px";
+      tooltip.style.left = "50%";
+      tooltip.style.transform = "translateX(-50%)";
+      tooltip.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.2)";
+
+      this.appendChild(tooltip);
+      this.removeAttribute("title");
+      this._tooltip = tooltip;
+    });
+
+    indicator.addEventListener("mouseleave", function () {
+      if (this._tooltip) {
+        const text = this._tooltip.innerText;
+        this.setAttribute("title", text);
+        this._tooltip.remove();
+        delete this._tooltip;
+      }
+    });
+  });
+
+  // Smooth scroll for the scroll-down arrow
+  const scrollArrow = document.querySelector(".scroll-down-arrow");
+  if (scrollArrow) {
+    scrollArrow.addEventListener("click", () => {
+      const featuresSection = document.getElementById("features");
+      if (featuresSection) {
+        featuresSection.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const counters = entry.target.querySelectorAll(".counter-animation");
+          counters.forEach((counter) => {
+            const target = parseInt(counter.getAttribute("data-count"));
+            let count = 0;
+            const updateCounter = () => {
+              const increment = target / 50;
+              if (count < target) {
+                count += increment;
+                counter.textContent =
+                  Math.ceil(count) >= 1000
+                    ? Math.ceil(count / 1000) + "K+"
+                    : Math.ceil(count);
+                setTimeout(updateCounter, 20);
+              } else {
+                counter.textContent =
+                  target >= 1000 ? Math.ceil(target / 1000) + "K+" : target;
+              }
+            };
+            updateCounter();
+          });
+          observer.unobserve(entry.target);
+        }
       });
+    },
+    { threshold: 0.1 }
+  );
+
+  document.querySelectorAll(".grid").forEach((grid) => {
+    observer.observe(grid);
+  });
 });
-  

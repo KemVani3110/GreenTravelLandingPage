@@ -38,7 +38,7 @@
   </head>
   <body class="bg-green-50 text-gray-800">
     <!-- Header -->
-    <header class="header-gradient text-white sticky top-0 z-50 header-shadow">
+    <header class="header-gradient text-white sticky top-0 z-50">
       <div
         class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
       >
@@ -47,7 +47,7 @@
           <div class="p-2 leaf-animation">
             <i class="fas fa-leaf text-green-200"></i>
           </div>
-          <span class="tracking-wide logo-text">
+          <span class="tracking-wide">
             <span class="text-white">Green</span
             ><span class="text-green-200">Travel</span>
           </span>
@@ -143,7 +143,7 @@
       id="home"
       class="hero-bg text-white py-24 md:py-32 relative overflow-hidden"
     >
-      <!-- Animated Background -->
+      <!-- Background -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="floating-leaf" style="top: 15%; left: 10%">
           <i class="fas fa-leaf text-green-200 text-xl opacity-70"></i>
@@ -175,10 +175,9 @@
             data-aos-duration="1000"
           >
             <h2
-              class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight hero-title"
+              class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight "
             >
-              Explore <span class="text-green-300">Nature</span
-              ><br />
+              Explore <span class="text-green-300">Nature</span><br />
               <span class="hero-subtitle">Preserve Our Planet</span>
             </h2>
             <p class="text-xl md:text-2xl mb-8 text-gray-100 max-w-lg">
@@ -233,7 +232,7 @@
             data-aos-duration="1000"
           >
             <div class="earth-container relative">
-              <!-- Rotating Earth -->
+              
               <div class="earth-globe">
                 <div
                   class="earth-indicator pulse-dot"
@@ -305,7 +304,7 @@
 
         <!-- Scroll Down Indicator -->
         <div
-          class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center"
+          class="absolute -bottom-20 left-1/2 transform -translate-x-1/2 text-center  "
         >
           <div class="scroll-down-arrow">
             <span class="block text-sm mb-2">Explore More</span>
@@ -382,7 +381,7 @@
       </div>
 
       <div class="max-w-6xl mx-auto px-4">
-        <!-- Section heading -->
+        <!-- Heading -->
         <div class="text-center mb-12" data-aos="fade-up">
           <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4">
             Our Impact
@@ -474,7 +473,7 @@
           </div>
         </div>
 
-        <!-- Additional Metrics Row -->
+        <!-- Metrics -->
         <div
           class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12"
           data-aos="fade-up"
@@ -537,6 +536,8 @@
           </div>
         </div>
       </div>
+
+      
     </section>
 
     <!-- Features -->
@@ -926,38 +927,41 @@
           </div>
         </div>
       </div>
-
-      <!-- Custom Shape Divider - from hero section -->
-      <div class="custom-shape-divider bottom mt-20">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
     </section>
 
     <!-- Popular Destinations -->
-    <section id="destinations" class="py-20 px-4 bg-green-50">
-      <div class="max-w-6xl mx-auto">
+    <section
+      id="destinations"
+      class="py-10 px-4 bg-gradient-to-b from-green-50 to-emerald-50 relative overflow-hidden"
+    >
+      <div
+        class="absolute top-0 left-0 w-64 h-64 bg-green-100 rounded-full opacity-20 -translate-x-1/2 -translate-y-1/2"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-100 rounded-full opacity-30 translate-x-1/3 translate-y-1/3"
+      ></div>
+
+      <div class="max-w-7xl mx-auto relative z-10">
+        <!-- Header -->
         <div class="text-center mb-16" data-aos="fade-up">
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">
-            Popular Eco Destinations
+          <span
+            class="inline-block px-4 py-1.5 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-3"
+            >Explore Responsibly</span
+          >
+          <h2
+            class="text-4xl md:text-5xl font-bold mb-6 text-gray-800 leading-tight"
+          >
+            Popular <span class="text-green-600">Eco Destinations</span>
           </h2>
           <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-            Discover incredible places while making a positive impact on local
-            communities and ecosystems.
+           "Embark on unforgettable journeys to awe-inspiring destinations, where every step leaves a 
+           positive impact on local communities and natural ecosystems. Our thoughtfully designed, eco-conscious 
+           adventures champion sustainability, cultural respect, and truly meaningful travel experiences."
           </p>
         </div>
 
-        <div class="carousel-container mb-10">
-          <div class="carousel-track mb-5">
+        <div class="carousel-container mb-14 relative">
+          <div class="carousel-track pb-6 ">
             <!-- Slide 1 -->
             <div class="carousel-slide px-4">
               <div
@@ -966,6 +970,7 @@
                 data-aos-delay="100"
               >
                 <div class="h-64 overflow-hidden">
+                    <div class="absolute top-3 right-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Sustainable</div>
                   <img
                     src="https://media.istockphoto.com/id/1136250609/photo/arenal-volcano-costa-rica.jpg?s=612x612&w=0&k=20&c=2fDgH1lAXe17ClB2OwJThMw5WLjUd6QgvrKtwiSMwO4="
                     alt="Costa Rica Rainforest"
@@ -974,8 +979,8 @@
                 </div>
                 <div class="p-6">
                   <div class="flex justify-between items-center mb-3">
-                    <h3 class="text-xl font-semibold">Costa Rica</h3>
-                    <span class="text-green-600 font-medium">$1,299</span>
+                    <h3 class="text-xl font-semibold"><i class="fas fa-map-marker-alt text-green-500 mr-2"></i>Costa Rica</h3>
+                     <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full font-semibold">$1,299</span>
                   </div>
                   <p class="text-gray-600 mb-4">
                     Explore pristine rainforests, volcanoes, and beautiful
@@ -1003,6 +1008,7 @@
                 data-aos-delay="200"
               >
                 <div class="h-64 overflow-hidden">
+                     <div class="absolute top-3 right-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Sustainable</div>
                   <img
                     src="https://c4.wallpaperflare.com/wallpaper/439/843/790/amazing-viewpoint-fjords-fjord-wallpaper-preview.jpg"
                     alt="Norway Fjords"
@@ -1011,8 +1017,8 @@
                 </div>
                 <div class="p-6">
                   <div class="flex justify-between items-center mb-3">
-                    <h3 class="text-xl font-semibold">Norway</h3>
-                    <span class="text-green-600 font-medium">$1,599</span>
+                    <h3 class="text-xl font-semibold"><i class="fas fa-map-marker-alt text-green-500 mr-2"></i>Norway</h3>
+                    <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full font-semibold">$1,599</span>
                   </div>
                   <p class="text-gray-600 mb-4">
                     Discover fjords, mountains and green cities with sustainable
@@ -1040,6 +1046,7 @@
                 data-aos-delay="300"
               >
                 <div class="h-64 overflow-hidden">
+                     <div class="absolute top-3 right-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Sustainable</div>
                   <img
                     src="https://www.shutterstock.com/shutterstock/videos/3528917055/thumb/1.jpg?ip=x480"
                     alt="New Zealand Mountains"
@@ -1048,8 +1055,8 @@
                 </div>
                 <div class="p-6">
                   <div class="flex justify-between items-center mb-3">
-                    <h3 class="text-xl font-semibold">New Zealand</h3>
-                    <span class="text-green-600 font-medium">$1,799</span>
+                    <h3 class="text-xl font-semibold"><i class="fas fa-map-marker-alt text-green-500 mr-2"></i>New Zealand</h3>
+                    <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full font-semibold">$1,799</span>
                   </div>
                   <p class="text-gray-600 mb-4">
                     Experience stunning landscapes with eco-lodges and support
@@ -1077,6 +1084,7 @@
                 data-aos-delay="100"
               >
                 <div class="h-64 overflow-hidden">
+                     <div class="absolute top-3 right-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Sustainable</div>
                   <img
                     src="https://w0.peakpx.com/wallpaper/915/133/HD-wallpaper-cave-glacier-iceland-vatnajokull-national-park-travel.jpg"
                     alt="Iceland Glaciers"
@@ -1085,8 +1093,8 @@
                 </div>
                 <div class="p-6">
                   <div class="flex justify-between items-center mb-3">
-                    <h3 class="text-xl font-semibold">Iceland</h3>
-                    <span class="text-green-600 font-medium">$1,899</span>
+                    <h3 class="text-xl font-semibold"><i class="fas fa-map-marker-alt text-green-500 mr-2"></i>Iceland</h3>
+                    <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full font-semibold">$1,899</span>
                   </div>
                   <p class="text-gray-600 mb-4">
                     Discover geothermal wonders, glaciers, and waterfalls with
@@ -1114,6 +1122,7 @@
                 data-aos-delay="200"
               >
                 <div class="h-64 overflow-hidden">
+                     <div class="absolute top-3 right-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Sustainable</div>
                   <img
                     src="https://media.istockphoto.com/id/626815916/photo/full-view-of-palau-malakal-island-and-koror.jpg?s=612x612&w=0&k=20&c=NJP1-9yTo-u9ORX2NVLXa3BSXw3d6PKh9zYhk_xUolk="
                     alt="Palau Islands"
@@ -1122,8 +1131,8 @@
                 </div>
                 <div class="p-6">
                   <div class="flex justify-between items-center mb-3">
-                    <h3 class="text-xl font-semibold">Palau</h3>
-                    <span class="text-green-600 font-medium">$2,199</span>
+                    <h3 class="text-xl font-semibold"><i class="fas fa-map-marker-alt text-green-500 mr-2"></i>Palau</h3>
+                    <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full font-semibold">$2,199</span>
                   </div>
                   <p class="text-gray-600 mb-4">
                     Explore marine sanctuaries and pristine coral reefs while
@@ -1151,6 +1160,7 @@
                 data-aos-delay="300"
               >
                 <div class="h-64 overflow-hidden">
+                     <div class="absolute top-3 right-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Sustainable</div>
                   <img
                     src="https://www.shutterstock.com/shutterstock/videos/1026711230/thumb/1.jpg?ip=x480"
                     alt="Bhutan Mountains"
@@ -1159,12 +1169,12 @@
                 </div>
                 <div class="p-6">
                   <div class="flex justify-between items-center mb-3">
-                    <h3 class="text-xl font-semibold">Bhutan</h3>
-                    <span class="text-green-600 font-medium">$2,399</span>
+                    <h3 class="text-xl font-semibold"><i class="fas fa-map-marker-alt text-green-500 mr-2"></i>Bhutan</h3>
+                    <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full font-semibold">$2,399</span>
                   </div>
                   <p class="text-gray-600 mb-4">
-                    Visit the carbon-negative kingdom with its pristine forests,
-                    ancient monasteries.
+                   Visit the carbon-negative kingdom with its pristine forests, ancient monasteries, 
+                   and timeless traditions.
                   </p>
                   <div class="flex justify-between items-center">
                     <span class="text-gray-500"
@@ -1188,6 +1198,7 @@
                 data-aos-delay="100"
               >
                 <div class="h-64 overflow-hidden">
+                     <div class="absolute top-3 right-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Sustainable</div>
                   <img
                     src="https://c4.wallpaperflare.com/wallpaper/268/607/584/amazon-river-river-amazon-rainforest-rainforest-wallpaper-preview.jpg"
                     alt="Amazon Rainforest"
@@ -1196,8 +1207,8 @@
                 </div>
                 <div class="p-6">
                   <div class="flex justify-between items-center mb-3">
-                    <h3 class="text-xl font-semibold">Amazon Rainforest</h3>
-                    <span class="text-green-600 font-medium">$1,999</span>
+                    <h3 class="text-xl font-semibold"><i class="fas fa-map-marker-alt text-green-500 mr-2"></i>Amazon Rainforest</h3>
+                    <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full font-semibold">$1,999</span>
                   </div>
                   <p class="text-gray-600 mb-4">
                     Experience the world's largest rainforest with indigenous
@@ -1225,6 +1236,7 @@
                 data-aos-delay="200"
               >
                 <div class="h-64 overflow-hidden">
+                     <div class="absolute top-3 right-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Sustainable</div>
                   <img
                     src="https://media.istockphoto.com/id/494314515/photo/panorama-of-ljubljana-slovenia-europe.jpg?s=612x612&w=0&k=20&c=1SbeSdqwM0JSxIDcACk-9zzo3yX8f3rsTG9pJUi3M8A="
                     alt="Slovenia Countryside"
@@ -1233,12 +1245,11 @@
                 </div>
                 <div class="p-6">
                   <div class="flex justify-between items-center mb-3">
-                    <h3 class="text-xl font-semibold">Slovenia</h3>
-                    <span class="text-green-600 font-medium">$1,499</span>
+                    <h3 class="text-xl font-semibold"><i class="fas fa-map-marker-alt text-green-500 mr-2"></i>Slovenia</h3>
+                    <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full font-semibold">$1,499</span>
                   </div>
                   <p class="text-gray-600 mb-4">
-                    Explore Europe’s green gem with alpine lakes, eco farms, and
-                    certified stays.
+                   Explore Europe’s hidden green gem, featuring crystal-clear alpine lakes, sustainable eco farms.
                   </p>
                   <div class="flex justify-between items-center">
                     <span class="text-gray-500"
@@ -1262,6 +1273,7 @@
                 data-aos-delay="300"
               >
                 <div class="h-64 overflow-hidden">
+                     <div class="absolute top-3 right-3 z-10 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Sustainable</div>
                   <img
                     src="https://i.ytimg.com/vi/t6hPrYsXi5I/maxresdefault.jpg"
                     alt="Japan Rural Countryside"
@@ -1270,8 +1282,8 @@
                 </div>
                 <div class="p-6">
                   <div class="flex justify-between items-center mb-3">
-                    <h3 class="text-xl font-semibold">Rural Japan</h3>
-                    <span class="text-green-600 font-medium">$2,099</span>
+                    <h3 class="text-xl font-semibold"><i class="fas fa-map-marker-alt text-green-500 mr-2"></i>Rural Japan</h3>
+                    <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full font-semibold">$2,099</span>
                   </div>
                   <p class="text-gray-600 mb-4">
                     Experience traditional Japanese countryside with farm stays,
@@ -1302,23 +1314,31 @@
         </div>
 
         <!-- Carousel Indicators -->
-        <div class="flex justify-center space-x-2 mt-6">
-          <div class="carousel-indicator active" data-index="0"></div>
-          <div class="carousel-indicator" data-index="1"></div>
-          <div class="carousel-indicator" data-index="2"></div>
-        </div>
+         <div class="flex justify-center space-x-3 mt-2 mb-12">
+      <button class="carousel-indicator w-3 h-3 rounded-full bg-green-200 hover:bg-green-300 focus:outline-none transition-all duration-300 active" data-index="0">
+        <span class="sr-only">Slide 1</span>
+      </button>
+      <button class="carousel-indicator w-3 h-3 rounded-full bg-green-200 hover:bg-green-300 focus:outline-none transition-all duration-300" data-index="1">
+        <span class="sr-only">Slide 2</span>
+      </button>
+      <button class="carousel-indicator w-3 h-3 rounded-full bg-green-200 hover:bg-green-300 focus:outline-none transition-all duration-300" data-index="2">
+        <span class="sr-only">Slide 3</span>
+      </button>
+    </div>
 
         <!-- View All Button -->
-        <div class="text-center mt-10">
-          <a
-            href="#"
-            class="inline-flex items-center justify-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-full transition duration-300"
-          >
-            <span>View All Destinations</span>
-            <i class="fas fa-arrow-right ml-2"></i>
-          </a>
-        </div>
-      </div>
+         <div class="text-center mt-4">
+      <a
+        href="#"
+        class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 text-white font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+      >
+        <span class="mr-2">View All Destinations</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
     </section>
 
     <!-- Testimonials -->
@@ -2186,8 +2206,8 @@
                     </div>
                     <div>
                       <p class="font-medium">Hours</p>
-                      <p class="text-green-100">Monday - Friday: 9am - 5pm</p>
-                      <p class="text-green-100">Saturday: 10am - 2pm</p>
+                      <p class="text-green-100">Monday - Friday: 9 AM to 17 PM</p>
+                      <p class="text-green-100">Saturday: 9 AM to 12 PM</p>
                     </div>
                   </div>
                 </div>
@@ -2392,7 +2412,7 @@
               <li class="flex items-start">
                 <i class="fas fa-clock mt-1 mr-3 text-green-300"></i>
                 <span class="text-green-200"
-                  >Mon-Fri: 9am - 5pm <br />Saturday: 10am - 2pm</span
+                  >Mon-Fri: 9 AM to 17 PM <br />Saturday: 9 AM to 12 PM</span
                 >
               </li>
             </ul>
